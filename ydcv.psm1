@@ -70,7 +70,7 @@ function ydcv()
             $currentText = Get-Clipboard;
             if (($currentText -ne $preText) -and ($currentText -match "^[a-zA-Z ,.-]+$"))
             {
-                ydcv $currentText;
+                ydcv $currentText.trim();
                 $preText = $currentText;
             }
             Start-Sleep -Milliseconds 100;
