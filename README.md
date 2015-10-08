@@ -31,4 +31,5 @@ Example screenshot:
 ```
 sw queryword    # query the word and speak it
 speak word      # speak the word
+ydcv -copyMode  # query word in clipboard
 ```
