@@ -58,7 +58,26 @@ function print_explanation()
 
 function ydcv()
 {
-    param([Switch] $debug);
+    param(
+        [Switch] $debug,
+        [Switch] $copyMode
+    );
+
+    if ($copyMode -ne $false)
+    {
+        while ($true)
+        {
+            $currentText = Get-Clipboard;
+            if (($currentText -ne $preText) -and ($currentText -match "^[a-zA-Z ]+$"))
+            {
+                ydcv $currentText;
+                $preText = $currentText;
+            }
+            Start-Sleep -Milliseconds 100;
+        }
+
+    }
+    
     foreach ($arg in $args)
     {
     	$query = [System.Web.HttpUtility]::UrlEncode($arg);
