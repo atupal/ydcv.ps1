@@ -3,7 +3,7 @@ PowerShell version [ydcv](https://github.com/felixonmars/ydcv)
 
 ## usage
 
-Copy the ydcv module to `$env:PSModulePath`.
+Copy the *ydcv* module to `$env:PSModulePath`.
 Bellow is a example of directory layout
 ```
 C:\Users\username\Documents\WindowsPowerShell
@@ -11,7 +11,7 @@ C:\Users\username\Documents\WindowsPowerShell
     ├───PsGet
     ├───PSReadLine
     │   └───en-US
-    └───ydcv.ps1
+    └───ydcv
     │   └───ydcv.psm1
     │   └───README
 ```
