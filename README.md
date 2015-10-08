@@ -1,5 +1,5 @@
 # ydcv.ps1
-PowerShell version ydcv
+PowerShell version [ydcv](https://github.com/felixonmars/ydcv)
 
 ## usage
 
