@@ -18,7 +18,7 @@ Use the module:
 Import-Module ydcv
 ```
 
-Or add this line to `C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+Or add this line to `C:\Users\username\Documents\WindowsPowerShell\profile.ps1`
 
 Example screenshot:
 
