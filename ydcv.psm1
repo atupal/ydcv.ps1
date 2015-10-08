@@ -68,7 +68,7 @@ function ydcv()
         while ($true)
         {
             $currentText = Get-Clipboard;
-            if (($currentText -ne $preText) -and ($currentText -match "^[a-zA-Z ]+$"))
+            if (($currentText -ne $preText) -and ($currentText -match "^[a-zA-Z ,.-]+$"))
             {
                 ydcv $currentText;
                 $preText = $currentText;
