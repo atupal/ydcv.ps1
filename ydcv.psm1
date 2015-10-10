@@ -9,6 +9,29 @@ $key = '401682907';
 #[Console]::OutputEncoding = [System.Text.Encoding]::UTF8;
 $OutputEncoding = [System.Text.Encoding]::UTF8;
 
+function c {
+    for($i=1; $i -le 150; $i++){echo ""}
+}
+
+function Get-Clipboard([switch] $Lines) {
+	if($Lines) {
+		$cmd = {
+			Add-Type -Assembly PresentationCore
+			[Windows.Clipboard]::GetText() -replace "`r", '' -split "`n"
+		}
+	} else {
+		$cmd = {
+			Add-Type -Assembly PresentationCore
+			[Windows.Clipboard]::GetText()
+		}
+	}
+	if([threading.thread]::CurrentThread.GetApartmentState() -eq 'MTA') {
+		& powershell -Sta -Command $cmd
+	} else {
+		& $cmd
+	}
+}
+
 function print_explanation()
 {
     #[CmdletBinding()];
