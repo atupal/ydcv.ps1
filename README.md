@@ -42,6 +42,6 @@ When you are in copy or select mode, the query result will show in the Windows N
 
 ### TODO
 - [x] Add Collins English Dictionary
-- [ ] Add Collins/Shanbei mp3
+- [x] Add Collins/Shanbei mp3
 - [ ] fix bug
 
