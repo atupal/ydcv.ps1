@@ -10,7 +10,7 @@ import pprint
 
 cookie = 'sessionid=xx'
 with open('./cookie') as fd:
-    cookie = fd.read()
+    cookie = fd.read().strip()
 
 wordbook_id = '116254'
 vocabulary_id = '262456'
